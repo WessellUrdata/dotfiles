@@ -36,6 +36,15 @@
     "break",
 
     "localip",
-    "publicip"
+    {
+      "key": "IPv4 Address",
+      "type": "publicip",
+      "ipv6": false
+    },
+    {
+      "key": "IPv6 Address",
+      "type": "publicip",
+      "ipv6": true
+    }
   ]
 }
