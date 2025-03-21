@@ -1,0 +1,4 @@
+# hatch is the VPS. We don't want GUI applications on it.
+{{- if eq .chezmoi.hostname "hatch" }}
+.config/foot/foot.ini
+{{- end }}
