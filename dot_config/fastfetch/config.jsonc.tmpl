@@ -25,17 +25,19 @@
     "memory",
     "swap",
     "disk",
-
+    
+    {{ if not (eq .chezmoi.hostname "hatch") -}}
     "break",
-
+    
     "de",
     "wm",
     "theme",
     "icons",
     "font",
 
+    {{ end -}}
     "break",
-
+    
     "localip",
     {
       "key": "IPv4 Address",
