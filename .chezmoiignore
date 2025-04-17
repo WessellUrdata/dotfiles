@@ -1,4 +1,4 @@
-# hatch is the VPS. We don't want GUI applications on it.
-{{- if eq .chezmoi.hostname "hatch" }}
+# hatch and hdd are the VPSs. We don't want GUI applications on them.
+{{- if (or (eq .chezmoi.hostname "hatch") (eq .chezmoi.hostname "hdd")) }}
 .config/foot/foot.ini
 {{- end }}
